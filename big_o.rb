@@ -50,7 +50,7 @@ end
 
 def largest_contiguous_subsum(list)
 	largest_sum = list.sum
-	current_sum = list.sum
+	current_sum = largest_sum
 	while list.length > 1
 		if list[0] > list[-1]
 			current_sum = current_sum - list.pop
